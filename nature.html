@@ -16,35 +16,60 @@
             background-color: #3a5f3a;
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav {
             background-color: #6b8e23;
-            padding: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
             font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #556b2f;
         }
         .container {
-            padding: 20px;
-            border: 2px solid #3a5f3a;
-            margin: 20px auto;
+            padding: 30px;
+            border: 3px solid #3a5f3a;
+            margin: 30px auto;
             width: 80%;
             background-color: #f5fff5;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #3a5f3a;
             color: white;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 14px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #6b8e23;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #556b2f;
         }
     </style>
 </head>
@@ -60,8 +85,9 @@
     </nav>
     
     <div class="container">
-        <h1>Home</h1>
+        <h1>Discover the Beauty of Nature</h1>
         <p>Experience the serenity of nature through words and colors. Let the simplicity bring peace.</p>
+        <a href="about.html" class="cta-button">Learn More</a>
     </div>
     
     <footer>© 2025 Nature Bliss | All Rights Reserved</footer>
