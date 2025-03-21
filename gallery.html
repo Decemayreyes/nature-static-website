@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +39,24 @@
             width: 80%;
             background-color: #f5fff5;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
         footer {
             background-color: #3a5f3a;
             color: white;
@@ -58,12 +77,20 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
-   
+    
     <div class="container">
         <h1>Gallery</h1>
-       <p>A collection of words that describe the essence of nature – lush forests, flowing rivers, serene skies, and vibrant landscapes.</p>
+        <p>A collection of words that describe the essence of nature – lush forests, flowing rivers, serene skies, and vibrant landscapes.</p>
+        <div class="gallery">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/tropical-waterfall-amazon-rain-forest-royalty-free-image-1728411255.jpg" alt="Beautiful Forest">
+            <img src="https://i.natgeofe.com/n/cfa19a0d-eff0-4628-8fdd-2ad8d66845dd/mountain-range-appenzell-switzerland.jpg" alt="Mountain View">
+            <img src="https://images.squarespace-cdn.com/content/v1/56e11ca927d4bd0fa99ed0cc/1626806016723-B55S22JFW2TYR7KX53HE/lake-serene" alt="Serene Lake">
+            <img src="https://img.freepik.com/free-photo/beautiful-scenery-layers-clouds-with-sunset_181624-11122.jpg" alt="Sunset Over Hills">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/flower-fields-662274fa24a91.jpg" alt="Flower Field">
+            <img src="https://cdn.naturettl.com/wp-content/uploads/2020/08/04123339/creative-ways-to-improve-your-wildlife-photography-800x534.jpg?p=20603" alt="Wildlife in Nature">
+        </div>
     </div>
-   
+    
     <footer>© 2025 Nature Bliss | All Rights Reserved</footer>
 </body>
 </html>
